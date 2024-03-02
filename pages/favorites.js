@@ -19,7 +19,7 @@ export default function Favorites() {
        const story = JSON.parse(this.dataset.story);  
        const isFavorited = checkFavorite(favorites, story);
        store.dispatch({ type: isFavorited ? "REMOVE_FAVORITE" : "ADD_FAVORITE", payload: { favorite: story } })  
-     Favo(path);
+     Favorites();
      }); 
   });
 }
